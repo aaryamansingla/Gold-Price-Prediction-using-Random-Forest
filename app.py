@@ -14,19 +14,19 @@ def get_user_input():
     SPX = st.sidebar.slider("Enter the value of Standard & Poor's 500 Index",
                           df["SPX"].min(),
                           df["SPX"].max(),
-                          df["SPX"].mean())
+                          df["SPX"].mean(axis=1))
     USO = st.sidebar.slider("Enter the value of United States Oil",
                           df["USO"].min(),
                           df["USO"].max(),
-                          df["USO"].mean())
+                          df["USO"].mean(axis=1))
     SLV = st.sidebar.slider("Enter the value of iShares Silver Trust",
                            df["SLV"].min(),
                            df["SLV"].max(),
-                           df["SLV"].mean())
+                           df["SLV"].mean(axis=1))
     EUR_USD = st.sidebar.slider("Enter the value of European Unioun Euro against United States Dollar",
                            df["EUR/USD"].min(),
                            df["EUR/USD"].max(),
-                           df["EUR/USD"].mean())
+                           df["EUR/USD"].mean(axis=1))
     features = pd.DataFrame({"Standard & Poor's 500 Index":SPX,
                              "United States Oil":USO,
                              "iShares Silver Trust":SLV,
