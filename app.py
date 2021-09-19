@@ -6,7 +6,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 
 df = pd.read_csv('gld_price_data.csv')
-df.drop(["Date"], axis=1, inplace = True)
 st.write("# Gold Price Prediction Using Random Forest Regressor")
 ml_model = pickle.load(open("model.pkl", "rb"))
 
