@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
-import pickle
+import pickle as pkl
 
 df = pd.read_csv('gld_price_data.csv')
 st.write("# Gold Price Prediction Using Random Forest Regressor")
-ml_model = pickle.load(open(r"Pickle_RL_Model.pkl", 'rb'))
+
 
 ##create function for User input
 def get_user_input():
@@ -31,6 +31,7 @@ def get_user_input():
     return features
 
 input_df = get_user_input() #get user input from sidebar
+ml_model = pkl.load(open("Pickle_RL_Model.pkl", 'rb'))
 prediction = ml_model.predict(input_df) #get predicitions
 
 #display predictions
