@@ -14,7 +14,7 @@ def get_user_input():
     SPX = st.sidebar.slider("Enter the value of Standard & Poor's 500 Index",
                           df["SPX"].min(),
                           df["SPX"].max(),
-                          df["SPX"].mean())
+                          float(df["SPX"].mean()))
     USO = st.sidebar.slider("Enter the value of United States Oil",
                           df["USO"].min(),
                           df["USO"].max(),
