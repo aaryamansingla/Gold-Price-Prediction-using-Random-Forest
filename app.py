@@ -4,7 +4,7 @@ import pickle
 
 df = pd.read_csv('gld_price_data.csv')
 st.write("# Gold Price Prediction Using Random Forest Regressor")
-ml_model = pickle.load(open("Pickle_RL_model.pkl", "rb")) #load the model
+ml_model = pickle.load(open("Pickle_RL_Model.pkl", "rb")) #load the model
 
 ##create function for User input
 def get_user_input():
