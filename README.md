@@ -5,6 +5,7 @@ GOLD has been a prominent asset for any nation. It has proved its worth many tim
 
 ## HOW TO USE THE DEPLOYED MODEL
 Use the slider to input the different values of SPX (Standard & Poor's 500 Index), USO (United States Oil), SLV (iShares Silver Trust), EUR/USD (European Unioun Euro against United States Dollar) using the slider provided for each individual category to get the price of the gold.
+[For reference, check input-output screenshot folder in the repository]
 
 ## Used libraries
 In this project, the dataset is trained on Random Forest Regressor machine learning model. Used libraries:<br>
